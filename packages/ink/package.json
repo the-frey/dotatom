@@ -1,0 +1,77 @@
+{
+  "_from": "https://www.atom.io/api/packages/ink/versions/0.9.15/tarball",
+  "_id": "ink@0.9.15",
+  "_inBundle": false,
+  "_integrity": "sha512-cx2zDFY1DLcI5DP2rHk6S8M1nLeUgEzRwDO2TJV+8VLgRpi/eC0dbzempNVY5i5CPXSnT8enhJDJBmYCGYYacw==",
+  "_location": "/ink",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ink/versions/0.9.15/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ink/versions/0.9.15/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ink/versions/0.9.15/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ink/versions/0.9.15/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ink/versions/0.9.15/tarball",
+  "_shasum": "d0e630892b8b57a6185efe9f293eb43618dbab25",
+  "_spec": "https://www.atom.io/api/packages/ink/versions/0.9.15/tarball",
+  "_where": "/private/var/folders/6f/sdn03fcj0_32d4r1t1mpqvb80000gp/T/apm-install-dir-119214-91870-utwxzn.khrv8",
+  "bugs": {
+    "url": "https://github.com/JunoLab/atom-ink/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "ftp-remote.openFile": {
+      "versions": {
+        "0.1.0": "consumeRemoteFileOpener"
+      }
+    }
+  },
+  "dependencies": {
+    "ansi_up": "^3.0.0",
+    "atom-space-pen-views": "^2.0.0",
+    "chroma-js": "^1.3.7",
+    "element-resize-detector": "^1.1.13",
+    "etch": "^0.12.5",
+    "fs-extra": "^5.0.0",
+    "fuzzaldrin-plus": "^0.1.0",
+    "katex": "^0.9.0",
+    "replace-in-file": "^3.0.0",
+    "underscore-plus": "^1.6.6",
+    "xterm": "3.12.0"
+  },
+  "deprecated": false,
+  "description": "Ink is a toolkit for building IDEs in Atom",
+  "engines": {
+    "atom": ">=1.12.0 <2.0.0"
+  },
+  "homepage": "https://github.com/JunoLab/atom-ink#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/ink",
+  "name": "ink",
+  "providedServices": {
+    "ink": {
+      "versions": {
+        "0.1.0": "provide"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JunoLab/atom-ink.git"
+  },
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "version": "0.9.15"
+}

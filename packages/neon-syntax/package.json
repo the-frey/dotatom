@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/neon-syntax/versions/0.3.7/tarball",
+  "_id": "neon-syntax@0.3.7",
+  "_inBundle": false,
+  "_integrity": "sha512-lGWwpCx9v2+GGHCH6xLCWw9H6hpYYaizkVBlPI2ZTVHkwtHrDm9LqzMmutcAZS+uMKkZejdlZgLsOP9bzvM2ow==",
+  "_location": "/neon-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/neon-syntax/versions/0.3.7/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/neon-syntax/versions/0.3.7/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/neon-syntax/versions/0.3.7/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/neon-syntax/versions/0.3.7/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/neon-syntax/versions/0.3.7/tarball",
+  "_shasum": "7c8de3241377c577c745c2631e43d83db78c2289",
+  "_spec": "https://www.atom.io/api/packages/neon-syntax/versions/0.3.7/tarball",
+  "_where": "/private/var/folders/6f/sdn03fcj0_32d4r1t1mpqvb80000gp/T/apm-install-dir-119214-92655-gnrm57.jdlpb",
+  "bugs": {
+    "url": "https://github.com/anomaly256/neon-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Neon syntax theme for Atom inspired by and based on the Farzher Neon Sublime Text 2/3 theme, using CSS text-shadow to implement the glow effect",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/anomaly256/neon-syntax#readme",
+  "license": "MIT",
+  "name": "neon-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anomaly256/neon-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.3.7"
+}

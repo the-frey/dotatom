@@ -1,0 +1,452 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+// Also: https://github.com/atom/atom/blob/master/static/variables/syntax-variables.less
+
+@import "ui-variables";
+@import "syntax-variables";
+
+autocomplete-suggestion-list.select-list.popover-list {
+  .suggestion-description-content {
+    overflow-y: hidden;
+  }
+}
+
+.ink .markdown {
+  font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+
+  white-space: normal;
+
+  pre {
+    margin-bottom: 0.5em;
+    font-size: inherit;
+    font-family: var(--editor-font-family);
+  }
+
+  code {
+    font-family: var(--editor-font-family);
+    font-size: inherit;
+  }
+
+  hr {
+    background: @base-border-color;
+    height: 1px;
+    border: 0;
+  }
+}
+
+.ink-stepper-line {
+  background-color: fade(@background-color-info, 20%) !important;
+}
+
+.ink-stepper-line-gutter {
+  visibility: hidden;
+  &:before {
+    visibility: visible;
+    content: "\f078";
+    font-family: 'Octicons Regular';
+    margin-left: 1.1em;
+    font-size: 0.9em;
+  }
+}
+
+
+.ink-result-toolbar {
+  left: 0;
+  transition: visibility 0s linear 0.2s, opacity 0.1s linear;
+  font-family: 'Octicons Regular';
+  font-size: 8px!important;
+  opacity: 0;
+
+  visibility: hidden;
+  position: absolute;
+
+  min-width: 500px;
+  top: -23px;
+
+  pointer-events: none;
+
+  transform: scale(0.75);
+  transform-origin: left;
+
+  .btn::before {
+    line-height: 1.5em;
+  }
+  &:hover {
+    transition: visibility 0s linear, opacity 0s linear;
+    opacity: 1!important;
+    visibility: visible;
+  }
+  &.hide {
+    display: none!important;
+  }
+  > .btn-group {
+    float: left;
+    pointer-events: auto;
+  }
+}
+
+.ink-result-container {
+  left: 1em;
+  min-width: 1em;
+  position: relative;
+  pointer-events: auto;
+
+  &:hover {
+    opacity: 1 !important;
+    .ink-result-toolbar {
+      opacity: 0.5;
+      visibility: visible;
+    }
+  }
+}
+
+// for the atom-overlay positioned below the current line
+.ink-overlay {
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    z-index: 5!important;
+    .ink-result-container {
+      max-width: none!important;
+    }
+  }
+}
+
+.ink-underlay {
+  width: 100%;
+  pointer-events: none;
+
+  .ink-result-container {
+    top: 0!important;
+    left: 0.5em!important;
+  }
+
+  .ink.inline {
+    width: 100%;
+    max-width: none;
+    white-space: pre-wrap;
+    border-top: 2px solid @background-color-info;
+    &.error {
+      border-top: 2px solid @background-color-error;
+    }
+    &:hover {
+      overflow: auto;
+    }
+    background-color: contrast(@syntax-background-color,
+                               darken(@syntax-background-color, 4%),
+                               lighten(@syntax-background-color, 4%));
+  }
+}
+
+atom-text-editor.editor{
+  .gutter[gutter-name="ink-breakpoints"] {
+    min-width: 1.2em;
+    .ink-bp {
+      transition: all 0.2s;
+
+      &.icon-primitive-dot {
+        color: @text-color-info;
+        &.inactive {
+          opacity: 0.5;
+        }
+        &:before {
+          content: "\f052";
+        }
+      }
+
+      &.ink-hide {
+        opacity: 0;
+        transform: translate(-1em);
+      }
+    }
+  }
+}
+atom-overlay.ink-profile-overlay{
+  pointer-events: none;
+  z-index: 3;
+  .ink-profile-line {
+    position: relative;
+    height: 1.5em;
+    top: -1.5em;
+    border-radius: 0px 5px 5px 0px;
+    background: fade(@background-color-info, 20%);
+  }
+}
+
+
+atom-text-editor {
+  div.block-notify .region {
+    background: @background-color-info;
+    opacity: 0.2;
+  }
+  div.block-notify.hidden .region {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  div.doc-highlight .region{
+    background-color: fade(@background-color-info, 10%);
+  }
+
+  .highlight.ink-block .region  {
+    background: url("atom://ink/res/stripe.png");
+    background-size: 20px;
+    opacity: 0.05;
+    transition: opacity 0.2s;
+    &.hidden {
+      opacity: 0;
+    }
+  }
+
+  .highlight.error-line .region {
+    background: fade(@background-color-error, 30%);
+  }
+
+  .icon::before {
+    font-family: 'Octicons Regular';
+  }
+  .icon-diff-modified::before {
+    content: "\f06d";
+  }
+  .icon-chevron-right::before {
+    content: "\f078";
+  }
+}
+
+.result-mixin() {
+  color: @syntax-text-color;
+  pointer-events: auto;
+
+  &.error {
+    color: @text-color-error;
+    border-left: 2px solid @background-color-error;
+  }
+
+  border-left: 2px solid @background-color-info;
+  border-right: 2px solid contrast(@syntax-background-color,
+                                   darken(@syntax-background-color, 8%),
+                                   lighten(@syntax-background-color, 8%));
+
+  padding: 0px 0.5em 0px 0.5em;
+  transition: all 0.2s, visibility 0s;
+  opacity: 1;
+  cursor: default;
+  user-select: auto;
+
+  border-radius: 3px;
+
+  overflow: hidden;
+  white-space: pre;
+
+  a {
+    color: @syntax-text-color;
+    opacity: 0.65;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  code, pre {
+    font-size: 1em;
+  }
+
+  &:hover {
+    overflow: auto;
+  }
+
+  &.loading {
+    opacity: 0.5;
+    // .icon:before {
+    //   animation: spin 4s linear infinite;
+    //   @keyframes spin { 100% { transform: rotate(1turn); } }
+    // }
+  }
+
+  &.ink-hide, &.ink-hide.invalid {
+    opacity: 0;
+    transform: translate(1em);
+  }
+  &.invalid {
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .icon {
+    text-align: center;
+    &:before {
+      width: 1em;
+      margin: 0;
+      font-size: inherit;
+    }
+  }
+
+  .editor.editor-colors {
+    color: @syntax-text-color;
+    word-wrap: normal;
+    white-space: pre;
+    background: none;
+    padding: 0;
+  }
+}
+
+.ink.inline {
+  .result-mixin;
+  background-color: contrast(@syntax-background-color,
+                             darken(@syntax-background-color, 4%),
+                             lighten(@syntax-background-color, 4%));
+  position: relative;
+  min-width: 1em;
+  white-space: pre;
+
+  > .tree {
+    > .header {
+      white-space: pre-wrap;
+      &.closed {
+        max-height: 1.5em;
+        white-space: pre;
+      }
+    }
+    > .body {
+      max-height: 250px;
+    }
+  }
+}
+
+.ink.under {
+  .result-mixin;
+  background: contrast(@syntax-background-color,
+                       darken(@syntax-background-color, 3%),
+                       lighten(@syntax-background-color, 3%));
+  font-size: 0.9em;
+  max-width: 100%;
+  white-space: pre-wrap;
+  padding: 0.5em 0.5em 0.5em 1em;
+}
+
+.ink.stepper {
+  .result-mixin;
+
+  background: contrast(@syntax-background-color,
+                       darken(@syntax-background-color, 3%),
+                       lighten(@syntax-background-color, 3%));
+
+  left: 1em;
+  max-width: initial;
+  position: relative;
+  .fade {
+    opacity: 0.5;
+  }
+  .btn-group {
+    vertical-align: bottom;
+    padding-left: .4em;
+    button {
+      height: 1.8em;
+      &:before {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+.ink-debug-toolbar {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 5px;
+  background-color: @app-background-color;
+}
+
+.tab.debug .title:before {
+  font-family: "Octicons Regular";
+  content: "\f091";
+  font-style: normal !important;
+  // For better visualisation in Mac OS
+  -webkit-font-smoothing: antialiased;
+}
+
+.ink.tree {
+  vertical-align: top;
+  > * {
+    vertical-align: baseline;
+  }
+
+  display: inline-block;
+  > .icon {
+    float: left;
+    width: 1em;
+  }
+  .gutted {
+    margin-left: 1.2em;
+  }
+  .icon {
+    text-align: center;
+    transition: all 0.1s ease-out;
+    transition: visibility 0s;
+    &.open {
+      transform: rotate(0.25turn);
+    }
+    &:before {
+      width: 1em;
+      margin: 0;
+      font-size: inherit;
+    }
+  }
+  table {
+    td {
+      padding: 0.4em;
+    }
+  }
+}
+
+.gotodef-panel {
+  .two-lines {
+    padding: 0.2em 0.75em 0.2em 1em !important;
+    .primary-line, .secondary-line {
+      line-height: 1.8em;
+    }
+  }
+  .error-message {
+    color: @text-color-error;
+  }
+  .character-match {
+    font-weight: bold;
+  }
+}
+
+.ink-tooltip {
+  position: absolute;
+  background: contrast(@app-background-color,
+                       darken(@app-background-color, 4%),
+                       lighten(@app-background-color, 4%));
+  border-left: 2px solid @background-color-info;
+  border-right: 2px solid @background-color-info;
+  border-radius: 3px;
+  font-size: 1.15em;
+  color: @text-color;
+  padding: 0.5em;
+  z-index: 100;
+  opacity: 1;
+  display: block;
+  transition: all 0.1s ease-out;
+
+  &.dontshow {
+    opacity: 0;
+    transform: translate(0, 1em);
+    pointer-events: none;
+  }
+}
+
+.ink-tooltip-msg {
+  display: block;
+}
+
+.xterm .xterm-viewport {
+  cursor: default;
+}

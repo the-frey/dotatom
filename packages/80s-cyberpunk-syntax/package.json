@@ -1,0 +1,45 @@
+{
+  "_from": "https://www.atom.io/api/packages/80s-cyberpunk-syntax/versions/0.2.0/tarball",
+  "_id": "80s-cyberpunk-syntax@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-3gpakQQd8d/mW1Mlmb/n4rYAVAKsA5GdrwvncO/BpJ62SzfnAi8zvg4kAEwTDY50Z1KxeH1Px8xuz/4uAJZ0LA==",
+  "_location": "/80s-cyberpunk-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/80s-cyberpunk-syntax/versions/0.2.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/80s-cyberpunk-syntax/versions/0.2.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/80s-cyberpunk-syntax/versions/0.2.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/80s-cyberpunk-syntax/versions/0.2.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/80s-cyberpunk-syntax/versions/0.2.0/tarball",
+  "_shasum": "47f5ed70df9b59fc1cae99ff7787f205c9735f62",
+  "_spec": "https://www.atom.io/api/packages/80s-cyberpunk-syntax/versions/0.2.0/tarball",
+  "_where": "/private/var/folders/6f/sdn03fcj0_32d4r1t1mpqvb80000gp/T/apm-install-dir-119214-91661-7ebpk4.y7c9h",
+  "bugs": {
+    "url": "https://github.com/Dieshen/80s-cyberpunk-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A short description of your syntax theme",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Dieshen/80s-cyberpunk-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "80s-cyberpunk-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dieshen/80s-cyberpunk-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.2.0"
+}

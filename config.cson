@@ -1,0 +1,21 @@
+"*":
+  "block-cursor":
+    global:
+      blinkOff:
+        backgroundColor: "#ffffff"
+        borderColor: "#ffffff"
+      blinkOn:
+        backgroundColor: "#9c9b9d"
+        borderColor: "#a2a2a2"
+        borderStyle: "underline"
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "flatland-dark-ui"
+      "flatland-dark"
+    ]
+  "exception-reporting":
+    userId: "caf950c7-0737-44bb-83f9-bd494e7ebc5b"
+  "proto-repl":
+    bootPath: "/usr/local/bin/boot"
+    leinPath: "/usr/local/bin/lein"

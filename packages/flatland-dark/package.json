@@ -1,0 +1,42 @@
+{
+  "_from": "https://www.atom.io/api/packages/flatland-dark/versions/0.2.2/tarball",
+  "_id": "flatland-dark@0.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-YWUmqhup45CKcVzsPDFqHdUp406G6NYojBeU7bJvqnFrjJXF8SWo8XcJreAc9xohtJpc46hQET1BsofTsCM+OA==",
+  "_location": "/flatland-dark",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/flatland-dark/versions/0.2.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/flatland-dark/versions/0.2.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/flatland-dark/versions/0.2.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/flatland-dark/versions/0.2.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/flatland-dark/versions/0.2.2/tarball",
+  "_shasum": "b132eae09fd6b2188b1a2d0c7c307e4c3f3496c9",
+  "_spec": "https://www.atom.io/api/packages/flatland-dark/versions/0.2.2/tarball",
+  "_where": "/private/var/folders/6f/sdn03fcj0_32d4r1t1mpqvb80000gp/T/apm-install-dir-119214-92612-wmqgnj.kom3m",
+  "bugs": {
+    "url": "https://github.com/michaelhelmick/flatland-dark/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A Flatland Dark theme",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/michaelhelmick/flatland-dark#readme",
+  "license": "MIT",
+  "name": "flatland-dark",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelhelmick/flatland-dark.git"
+  },
+  "theme": "syntax",
+  "version": "0.2.2"
+}

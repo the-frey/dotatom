@@ -1,0 +1,116 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+// Hightlights blocks that are executed.
+// Based on https://github.com/richrace/highlight-selected
+:host, atom-text-editor {
+  atom-text-editor .highlight.block-execution .region {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .highlights {
+    .block-execution .region {
+      background-color: rgba(155, 149, 0, 0.6);
+    }
+  }
+}
+
+// Style the ink console. Reduce padding and change background color.
+ink-console {
+  .items {
+    > .cell {
+      .result {
+        -webkit-user-select: text;
+        cursor: text;
+
+        > .editor.editor-colors.proto-repl-console {
+          padding: 1px;
+          background-color: rgba(0, 0, 0, 0);
+        }
+      }
+    }
+  }
+}
+
+.proto-repl {
+  .ink.proto-tree {
+    clear: both;
+    > .icon {
+      float: left;
+      width: 1em;
+    }
+    .gutted {
+      margin-left: 1.2em;
+    }
+    .icon {
+      text-align: center;
+      transition: all 0.1s ease-out;
+      &.open {
+        transform: rotate(0.25turn);
+      }
+    }
+  }
+}
+
+.ink.result.inline.proto-repl {
+  max-width: 700px;
+
+  .header.gutted{
+    .text {
+      margin-right: 50px;
+    }
+  }
+
+  .header.gutted:hover {
+    background: rgba(134, 128, 36, 0.2);
+  }
+
+  .leaf{
+    .text{
+      margin-right: 50px;
+    }
+  }
+
+  .leaf:hover {
+    background: rgba(134, 128, 36, 0.2);
+  }
+
+  // Def button that sets multiple vars.
+  .def-saved-vars {
+    line-height: 1.4em;
+    margin-top: 2px;
+    float: right;
+    z-index: 10;
+    position: relative;
+  }
+
+  .def-saved-vars:hover {
+    background-image: linear-gradient(#4278E4, #365DAB);
+  }
+
+  // highlight color when a def button is clicked
+  .clicking-btn {
+    background: #FFFF0A;
+  }
+  .clicking-btn:hover {
+    background: #FFFF0A;
+  }
+
+  // Def button that sets just one var.
+  .def-saved-var{
+    line-height: 1.4em;
+    margin-top: 2px;
+    float: right;
+    z-index: 10;
+    position: relative;
+  }
+
+  .def-saved-var:hover {
+    background-image: linear-gradient(#4278E4, #365DAB);
+  }
+}

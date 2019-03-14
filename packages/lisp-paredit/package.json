@@ -1,0 +1,52 @@
+{
+  "_from": "https://www.atom.io/api/packages/lisp-paredit/versions/0.6.0/tarball",
+  "_id": "lisp-paredit@0.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-0yw3mUcyFgqJLY+Fai7qH28CDXqeLmGS3J00ff3pBB9HugqSVHvF7bIz59hrxUcx+3mttafeO8J4Xttt1gKGbg==",
+  "_location": "/lisp-paredit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/lisp-paredit/versions/0.6.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/lisp-paredit/versions/0.6.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/lisp-paredit/versions/0.6.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/lisp-paredit/versions/0.6.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/lisp-paredit/versions/0.6.0/tarball",
+  "_shasum": "09e70f670bed62a86f10ac10cf137fc7afa83763",
+  "_spec": "https://www.atom.io/api/packages/lisp-paredit/versions/0.6.0/tarball",
+  "_where": "/private/var/folders/6f/sdn03fcj0_32d4r1t1mpqvb80000gp/T/apm-install-dir-119214-92524-tv2id3.796c",
+  "bugs": {
+    "url": "https://github.com/jonspalding/lisp-paredit/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.5",
+    "paredit.js": "^0.2.13"
+  },
+  "deprecated": false,
+  "description": "Paredit for Atom",
+  "engines": {
+    "atom": ">=1.13.0"
+  },
+  "homepage": "https://github.com/jonspalding/lisp-paredit#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "lisp-paredit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonspalding/lisp-paredit.git"
+  },
+  "version": "0.6.0"
+}

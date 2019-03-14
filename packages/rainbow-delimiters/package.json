@@ -1,0 +1,43 @@
+{
+  "_from": "https://www.atom.io/api/packages/rainbow-delimiters/versions/2.1.2/tarball",
+  "_id": "rainbow-delimiters@2.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-gy8TD28+8XdxxT1weoO9MiL9+GcUW0trupjeaxUBYgsgvoUxSQEGfJWPMRL09/hpDy9E5AXjmKMpid4qkfJ1ww==",
+  "_location": "/rainbow-delimiters",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/rainbow-delimiters/versions/2.1.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/rainbow-delimiters/versions/2.1.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/rainbow-delimiters/versions/2.1.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/rainbow-delimiters/versions/2.1.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/rainbow-delimiters/versions/2.1.2/tarball",
+  "_shasum": "ef11b0c0ec8db66b99c305391fd37c7e3be0dafa",
+  "_spec": "https://www.atom.io/api/packages/rainbow-delimiters/versions/2.1.2/tarball",
+  "_where": "/private/var/folders/6f/sdn03fcj0_32d4r1t1mpqvb80000gp/T/apm-install-dir-119214-91730-4gwdgk.nszf3",
+  "bugs": {
+    "url": "https://github.com/paradoxxxzero/atom-rainbow-delimiters/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Highlight delimiters around your cursor.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/paradoxxxzero/atom-rainbow-delimiters#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/rainbow-delimiters",
+  "name": "rainbow-delimiters",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/paradoxxxzero/atom-rainbow-delimiters.git"
+  },
+  "version": "2.1.2"
+}

@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/flatland-dark-ui/versions/0.2.5/tarball",
+  "_id": "flatland-dark-ui@0.2.5",
+  "_inBundle": false,
+  "_integrity": "sha512-poqYC8u4r/ZIFSY53kvrJaLMhe2z6M68zA90tnnR1264mSHrZsXeO9Nn7PCTNqeSK8rqyWZYrzoGvU75pBl1BA==",
+  "_location": "/flatland-dark-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/flatland-dark-ui/versions/0.2.5/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/flatland-dark-ui/versions/0.2.5/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/flatland-dark-ui/versions/0.2.5/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/flatland-dark-ui/versions/0.2.5/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/flatland-dark-ui/versions/0.2.5/tarball",
+  "_shasum": "71c13dafd187b312affea695fa3722c6ee3a4977",
+  "_spec": "https://www.atom.io/api/packages/flatland-dark-ui/versions/0.2.5/tarball",
+  "_where": "/private/var/folders/6f/sdn03fcj0_32d4r1t1mpqvb80000gp/T/apm-install-dir-119214-93951-18g190t.td9a",
+  "bugs": {
+    "url": "https://github.com/michaelhelmick/flatland-dark-ui/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A port of the Sublime Text/TextMate Dark UI Theme",
+  "engines": {
+    "atom": ">0.40.0"
+  },
+  "homepage": "https://github.com/michaelhelmick/flatland-dark-ui#readme",
+  "license": "MIT",
+  "name": "flatland-dark-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelhelmick/flatland-dark-ui.git"
+  },
+  "theme": "ui",
+  "version": "0.2.5"
+}

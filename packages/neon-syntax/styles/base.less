@@ -1,0 +1,231 @@
+@import "syntax-variables";
+
+atom-text-editor,atom-text-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+  -webkit-filter: contrast(@contrast);
+  -webkit-filter: saturate(@saturation);
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .wrap-guide {
+    color: @syntax-wrap-guide-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .search-results .syntax--marker .region {
+    background-color: transparent;
+    border: @syntax-result-marker-color;
+  }
+
+  .search-results .syntax--marker.current-result .region {
+    border: @syntax-result-marker-color-selected;
+  }
+}
+
+atom-text-editor.is-focused,atom-text-editor {
+  .cursor {
+    border-color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .line-number.cursor-line-no-selection, .line.cursor-line {
+    background-color: #282828;
+  }
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px solid rgb(34, 200, 153);
+  z-index: 100;
+}
+
+.syntax--comment {
+  font-weight: bold;
+  font-style: italic;
+  color: #a1784c;
+  text-shadow: 0px 0px @blur rgba(161, 120, 76, @opacity);
+}
+
+.syntax--string {
+  color: rgba(170, 175, 235, 0.93);
+  text-shadow: 0px 0px @blur rgba(170, 175, 219, @opacity);
+}
+
+.syntax--constant.syntax--numeric {
+  color: rgba(143, 194, 187, 0.73);
+  text-shadow: 0px 0px @blur rgba(119, 194, 187, @opacity);
+}
+
+.syntax--constant.syntax--character, .syntax--constant.syntax--other {
+  color: rgba(34, 255, 153, 0.87);
+  text-shadow: 0px 0px @blur rgba(34, 200, 153, @opacity);
+}
+
+.syntax--constant.syntax--language {
+  color: #bDbe82;
+  text-shadow: 0px 0px @blur rgba(189, 190, 130, @opacity);
+}
+
+.syntax--storage {
+  color: rgba(139, 108, 207, 1);
+  text-shadow: 0px 0px @blur rgba(139, 93, 223, @opacity);
+}
+
+.syntax--meta.syntax--function-call {
+  color: rgba(203, 175, 108, 1);
+  text-shadow: 0px 0px @blur rgba(203, 175, 108, @opacity);
+}
+
+.syntax--support.syntax--function {
+  color: #ADAeB2;
+  text-shadow: 0px 0px @blur rgba(189, 190, 130, @opacity);
+}
+
+.syntax--variable.syntax--other.external-symbol {
+  color: #BBDFDD;
+  text-shadow: 0px 0px @blur rgba(187, 223, 221, @opacity);
+}
+
+.syntax--variable.syntax--language, .syntax--variable.syntax--other {
+  color: #3aafff;
+  text-shadow: 0px 0px @blur rgba(58, 175, 255, @opacity);
+}
+
+.syntax--variable.syntax--parameter {
+  color: #33b6a9;
+  text-shadow: 0px 0px @blur rgba(5, 214, 249, @opacity);
+}
+
+.syntax--keyword {
+  color: #bB7Dbf;
+  text-shadow: 0px 0px @blur rgba(155, 159, 253, @opacity);
+}
+
+.syntax--entity {
+  &.syntax--name.syntax--type {
+    color: rgba(175, 119, 169, 0.93);
+    text-shadow: 0px 0px @blur rgba(175, 119, 169, @opacity);
+  }
+
+  &.syntax--name.syntax--class {
+    color: #B998DF;
+    text-shadow: 0px 0px @blur rgba(185, 152, 223, @opacity);
+  }
+
+  &.syntax--name.syntax--structure {
+    color: rgba(34, 255, 153, 0.87);
+    text-shadow: 0px 0px @blur rgba(185, 152, 223, @opacity);
+  }
+
+  &.syntax--name.syntax--tag {
+    color: #49a6d2;
+    text-shadow: 0px 0px @blur rgba(73, 166, 210, @opacity);
+  }
+
+  &.syntax--name.syntax--function {
+    color: rgba(18, 255, 169, 0.97);
+    text-shadow: 0px 0px @blur rgba(34, 255, 169, @opacity);
+  }
+
+  &.syntax--name.syntax--function.syntax--io {
+    color: #DFB3AC;
+    text-shadow: 0px 0px @blur rgba(223, 179, 172, @opacity);
+  }
+
+  &.syntax--name.syntax--function.syntax--misc {
+    color: #E3E4A9;
+    text-shadow: 0px 0px @blur rgba(227, 228, 169, @opacity);
+  }
+
+  &.syntax--name.syntax--function.syntax--predicate {
+    color: #A5DF93;
+    text-shadow: 0px 0px @blur rgba(165, 223, 147, @opacity);
+  }
+
+  &.syntax--other.syntax--attribute-name {
+    color: rgba(73, 134, 194, 0.8);
+    text-shadow: 0px 0px @blur rgba(73, 134, 194, @opacity);
+  }
+}
+
+.syntax--meta.syntax--class, .syntax--entity.syntax--name.syntax--class, .syntax--entity.syntax--name.syntax--type.syntax--class {
+  color: #ff4377;
+  text-shadow: 0px 0px @blur rgba(255, 51, 153, @opacity);
+}
+
+.syntax--support.syntax--class {
+  color: rgba(239, 106, 167, 0.87);
+  text-shadow: 0px 0px @blur rgba(239, 106, 167, @opacity);
+}
+
+.syntax--invalid {
+  color: #DFDFD5;
+  text-shadow: 0px 0px @blur #CC1B27;
+}
+
+.syntax--string .syntax--source {
+  font-style: italic;
+  color: rgba(51, 153, 255, 1);
+  text-shadow: 0px 0px @blur rgba(0, 153, 255, @opacity);
+}
+
+.syntax--entity.syntax--name.syntax--tag {
+  color: #49a6d2;
+  text-shadow: 0px 0px @blur rgba(73, 166, 210, @opacity);
+}
+
+.syntax--markup.syntax--heading {
+  font-weight: bold;
+  color: rgba(18, 255, 169, 0.97);
+  text-shadow: 0px 0px @blur rgba(34, 255, 169, @opacity);
+}
+
+.syntax--markup.syntax--italic {
+  font-style: italic;
+  color: #bB7Dbf;
+  text-shadow: 0px 0px @blur rgba(155, 169, 253, @opacity);
+}
+
+.syntax--markup.syntax--bold {
+  font-weight: bold;
+  color: #bB7Dbf;
+  text-shadow: 0px 0px @blur rgba(155, 169, 253, @opacity);
+}
+
+.syntax--markup.syntax--underline {
+  text-decoration: underline;
+  color: rgba(139, 108, 207, 1);
+  text-shadow: 0px 0px @blur rgba(139, 93, 223, @opacity);
+}
+
+.syntax--gfm {
+  .syntax--link .syntax--entity {
+    text-decoration: underline;
+    color: #3aafff;
+    text-shadow: 0px 0px @blur rgba(58, 175, 255, @opacity);
+  }
+}
