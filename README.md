@@ -18,3 +18,12 @@ Lein and Boot are expected to be in:
 ```
 
 You will also need [Joker](https://github.com/candid82/joker) installed and available for linting. 
+
+## Connect to a remote repl
+
+With: `cmd-option-y`
+
+## Load current buffer
+
+With `C-c l`
+
