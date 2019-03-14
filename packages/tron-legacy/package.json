@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/tron-legacy/versions/0.5.0/tarball",
+  "_id": "tron-legacy@0.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-6TSL3PIr/SVgHj+sqZSfjSvQuLNFxil03m+J6TXQoyM6+yhnBwPwaPMTZDGLoVnBRkcrJAMnLN0NqC1gUWZcnQ==",
+  "_location": "/tron-legacy",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/tron-legacy/versions/0.5.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/tron-legacy/versions/0.5.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/tron-legacy/versions/0.5.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/tron-legacy/versions/0.5.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/tron-legacy/versions/0.5.0/tarball",
+  "_shasum": "f321b4495bad5767ad3b43b7e094a22e3106c2af",
+  "_spec": "https://www.atom.io/api/packages/tron-legacy/versions/0.5.0/tarball",
+  "_where": "/private/var/folders/6f/sdn03fcj0_32d4r1t1mpqvb80000gp/T/apm-install-dir-119214-96919-o8fj34.288v",
+  "bugs": {
+    "url": "https://github.com/Riari/tron-legacy-atom/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A modified conversion of Dayle Rees' Tron Legacy for TextMate.",
+  "engines": {
+    "atom": ">0.170.0"
+  },
+  "homepage": "https://github.com/Riari/tron-legacy-atom#readme",
+  "license": "MIT",
+  "name": "tron-legacy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riari/tron-legacy-atom.git"
+  },
+  "theme": "syntax",
+  "version": "0.5.0"
+}

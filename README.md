@@ -4,6 +4,8 @@ A simple atom setup for Clojure and collaborative editing using Atom and Atom Te
 
 You can use this as a solid base for Clojure development or simply for pairing. 
 
+It's been set up to work well with the One Dark UI and Tron Legacy syntax packages. There's a tiny bit of custom LESS in `less.css` - remove it if you're using a different theme.
+
 ## Installation
 
 Clone this repo into `~/.atom` and restart atom.

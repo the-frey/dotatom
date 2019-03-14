@@ -11,8 +11,8 @@
   core:
     telemetryConsent: "no"
     themes: [
-      "flatland-dark-ui"
-      "flatland-dark"
+      "one-dark-ui"
+      "tron-legacy"
     ]
   editor:
     showInvisibles: true
