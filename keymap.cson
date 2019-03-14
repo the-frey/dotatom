@@ -30,6 +30,9 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
+'body':
+  'shift-ctrl-i': 'window:toggle-invisibles'
+
 '.platform-darwin atom-workspace atom-text-editor:not([mini])':
   'ctrl-c l': 'proto-repl:load-current-file'
 
