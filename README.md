@@ -29,3 +29,7 @@ With: `cmd-option-y`
 
 With `C-c l`
 
+## Joker and teletype
+
+The linter with Joker with fail when you are in your remote pair's buffer. Disable the linter before connecting. If you're the host, then you can leave it running.
+
