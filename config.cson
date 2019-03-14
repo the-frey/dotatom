@@ -19,5 +19,6 @@
   "exception-reporting":
     userId: "caf950c7-0737-44bb-83f9-bd494e7ebc5b"
   "proto-repl":
+    autoPrettyPrint: true
     bootPath: "/usr/local/bin/boot"
     leinPath: "/usr/local/bin/lein"
