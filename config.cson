@@ -9,6 +9,9 @@
         borderColor: "#a2a2a2"
         borderStyle: "underline"
   core:
+    disabledPackages: [
+      "rainbow-delimiters"
+    ]
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
