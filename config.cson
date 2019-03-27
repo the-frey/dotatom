@@ -21,3 +21,5 @@
   "proto-repl":
     bootPath: "/usr/local/bin/boot"
     leinPath: "/usr/local/bin/lein"
+  welcome:
+    showOnStartup: false
